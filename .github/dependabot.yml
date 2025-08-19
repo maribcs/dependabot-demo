@@ -13,3 +13,8 @@ updates:
     directory: "/ruby"
     schedule:
       interval: "weekly"
+  - package-ecosystem: "devcontainers"
+    directory: "/"
+    schedule:
+      interval: daily
+    target-branch: "develop"

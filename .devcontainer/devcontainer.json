@@ -1,0 +1,13 @@
+{
+	// NOTE that this Dev Container has been observed failing with Segmentation fault in Colima on Mac Intel when running `code-server`.
+	"name": "Docker in Docker",
+	"image": "mcr.microsoft.com/devcontainers/base:bookworm",
+	"postCreateCommand": "bash ./.devcontainer/postCreateCommand.sh",
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {
+			"version": "latest",
+			"enableNonRootDocker": "true",
+			"moby": "true"
+		},
+		"ghcr.io/devcontainers/features/sshd:1.0.9": {}
+}
