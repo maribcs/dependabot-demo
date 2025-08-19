@@ -17,9 +17,11 @@ updates:
     directory: "/"
     schedule:
       interval: daily
+    target-branch: "develop"
   - package-ecosystem: "docker-compose"
     directory: "/"
     schedule:
       interval: daily
+    target-branch: "develop"
     allow:
       - dependency-name: "mariadb"
