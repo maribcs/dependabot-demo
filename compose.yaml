@@ -1,0 +1,12 @@
+services:
+  db:
+    image: mariadb:10.6.11
+    environment:
+      MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: "yes"
+      MARIADB_ROOT_HOST: "localhost"
+      MARIADB_DATABASE: "demo"
+      MARIADB_USER: "demo"
+      MARIADB_PASSWORD: "dummy"
+    volumes:
+      - db:/var/lib/mysql
+    restart: always
