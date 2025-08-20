@@ -9,5 +9,7 @@
 			"enableNonRootDocker": "true",
 			"moby": "true"
 		},
-		"ghcr.io/devcontainers/features/sshd:1.0.9": {}
+		"ghcr.io/devcontainers/features/sshd:1.0.9": {},
+		"ghcr.io/devcontainers/features/git-lfs:1.2.4": {}
+	}
 }
